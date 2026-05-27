@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,40500..700;1,400..700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-brand-cream-light: #FBF9F6;
+  --color-brand-cream: #F5EEE6;
+  --color-brand-cappuccino: #E3D3C4;
+  --color-brand-latte: #CBAF96;
+  --color-brand-caramel: #B7824B;
+  --color-brand-espresso: #2B1810;
+  --color-brand-cozy-dark: #120907;
+}
+
+@layer utilities {
+  .glass-card-dark {
+    background: rgba(43, 24, 16, 0.45);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(203, 175, 150, 0.15);
+  }
+  
+  .glass-card-light {
+    background: rgba(251, 249, 246, 0.65);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(43, 24, 16, 0.1);
+  }
+
+  /* Custom subtle scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(183, 130, 75, 0.4);
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(183, 130, 75, 0.6);
+  }
+}
+
